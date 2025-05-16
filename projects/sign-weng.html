@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>S2GEM & Sign Weng - ZHAO</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="stylesheet" href="../project-styles.css">
+</head>
+<body>
+    <div class="page-wrapper">
+        <div class="nav-bar">
+            <div class="nav-container">
+                <a href="../" class="nav-logo">ZHAO</a>
+                <div class="nav-links">
+                    <a href="../#projects" class="nav-link">Projects</a>
+                    <a href="../#photos" class="nav-link">Photos</a>
+                    <a href="../#resume" class="nav-link">Resume</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="project-header">
+            <div class="container">
+                <h1 class="project-title">S2GEM & Sign Weng</h1>
+                
+                <div class="project-info-grid">
+                    <div class="info-section">
+                        <div class="info-links">
+                            <a href="#" class="info-link">Website</a>
+                            <a href="#" class="info-link">Download</a>
+                            <a href="#" class="info-link">Design Doc</a>
+                        </div>
+                    </div>
+                    
+                    <div class="info-section">
+                        <div class="info-item">
+                            <div class="info-label">Duration:</div>
+                            <div class="info-value">2 Years</div>
+                        </div>
+                        <div class="info-item">
+                            <div class="info-label">Position:</div>
+                            <div class="info-value">3D Researcher</div>
+                        </div>
+                        <div class="info-item">
+                            <div class="info-label">Persona:</div>
+                            <div class="info-value">Deaf People</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="project-content">
+            <div class="container">
+                <section class="content-section">
+                    <h2>What</h2>
+                    <p>Skin segmentation is an important and challenging task which finds use in direct applications such as image editing and indirect downstream tasks such as face detection or hand gesture recognition. However, the availability of diverse and high-quality training data is a major challenge. Annotation of dense segmentation masks is an expensive and time consuming process. Existing skin segmentation datasets are often limited in scope: they include downstream task-specific datasets captured under controlled conditions, with limited variability in lighting, scale, ethnicity, and age. This lack of diversity in the training data can lead to poor generalization and limited performance when applied to real-world images. To address this issue, we propose a tunable generation pipeline, Synthetic Skin Mask Generator (S2MGen), which allows for the creation of a diverse range of body positions, camera angles, and lighting conditions.</p>
+                </section>
+
+                <section class="content-section">
+                    <h2>Why</h2>
+                    <p>There are 70 million people using sign language nowadays, but you don't see them often in life. It is not because they want to form a special group hidden somewhere in the corner but because there's no such solution for them to live a normal life. Till 2022/10/19 there's no single sign language translator in the market. Sign Weng is a sign language translator powered by the research of S2MGen, helping people with custom sign language input while utilizing synthetic data to help train the model.</p>
+                </section>
+
+                <section class="content-section">
+                    <h2>Result</h2>
+                    <div class="media-grid">
+                        <div class="media-item">
+                            <img src="https://assets-global.website-files.com/65f2c4c5d8c2d86c4a4d7f8c/65f2c4c5d8c2d86c4a4d7f8c_SignWeng.jpg" alt="Result">
+                        </div>
+                    </div>
+                </section>
+
+                <section class="content-section">
+                    <h2>Research</h2>
+                    <h3>Skin Segmentation Approaches</h3>
+                    <p>Traditionally, segmentation of skin areas in an image has been tackled using color dependent approaches such as explicit thresholding in various color spaces [8, 10, 55], representing skin color distributions using gaussian mixture models [23, 47, 68] etc. Phung et al. [40] introduced neural networks to skin segmentation by classifying skin vs. non skin pixels using a Multi-Layer Perceptron architecture on the chrominance channels. Recent advancements in skin segmentation have been achieved using Fully Convolutional Networks (FCNs) [32] which allow for better modelling of the complexity of real world scenes. Tarasiewicz et al. [57] propose a lightweight U-Net [50] modified to learn a larger receptive field for skin segmentation. Yi et al. [20] utilize body segmentation labels in a dual-task semi-supervised learning setting to generate robust skin masks. As mentioned in the previous section, current available skin datasets are mostly small and heavily biased. Dourado et al. [13] study the effect of domain adaptation between these different datasets. More information related to skin segmentation algorithms can be found in [24, 33, 37].</p>
+                </section>
+
+                <section class="content-section">
+                    <h2>Modeling Research</h2>
+                    <div class="media-grid">
+                        <div class="media-item">
+                            <img src="https://assets-global.website-files.com/65f2c4c5d8c2d86c4a4d7f8c/65f2c4c5d8c2d86c4a4d7f8c_SignWeng.jpg" alt="Modeling Research">
+                        </div>
+                    </div>
+                </section>
+
+                <section class="content-section">
+                    <h2>Pipeline</h2>
+                    <div class="sub-section">
+                        <h4>Pipeline Input</h4>
+                        <div class="media-grid">
+                            <div class="media-item">
+                                <img src="https://assets-global.website-files.com/65f2c4c5d8c2d86c4a4d7f8c/65f2c4c5d8c2d86c4a4d7f8c_SignWeng.jpg" alt="Pipeline Input">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="sub-section">
+                        <h4>Pipeline Output</h4>
+                        <p>Here shows how the system works.</p>
+                        <p>I first setup the Human Models and then randomly modify the attributes like skin color, poses, hair style, cloths...</p>
+                        <p>Then I set up the camera and lighting making sure the model is in the frame and is lighted up to work with CV model.</p>
+                        <p>After that, I setup some random stuff like a painting or a blocks to add layers to the final renders.</p>
+                        <p>Finally, we render the image with a raw image and a segmented images.</p>
+                    </div>
+                </section>
+
+                <section class="content-section">
+                    <h2>Research</h2>
+                    <h3>PROBLEMS TO SOLVE</h3>
+                    <ul>
+                        <li>Lots of local dialects make data collecting very hard</li>
+                        <li>Local dialects are not roadblocks for sign language users but for healthy people</li>
+                        <li>Standard language exists but many school doesn't follow</li>
+                        <li>Facial expressions are part of sign language(but can be ignored by some translators)</li>
+                        <li>Usually not accepted by the society</li>
+                    </ul>
+                </section>
+
+                <section class="content-section">
+                    <h2>Guideline</h2>
+                    <p>There are 70 million people using sign language nowadays, but you don't see them often in life. It is not because they want to form a special group hidden somewhere in the corner but because there's no such solution for them to live a normal life. Till 2022/10/19 there's no single sign language translator in the market.</p>
+                </section>
+            </div>
+        </div>
+
+        <div class="more-projects">
+            <div class="container">
+                <h2>More Projects</h2>
+                <div class="projects-grid">
+                    <a href="/projects/3d-design-pipeline-programing-research" class="project-card">
+                        <div class="project-title">StarRealm</div>
+                    </a>
+                    <a href="/projects/3d-design-pipeline-research" class="project-card">
+                        <div class="project-title">Neon City</div>
+                    </a>
+                    <a href="/projects/sign-weng" class="project-card">
+                        <div class="project-title">S2GEM & Sign Weng</div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="../script.js"></script>
+</body>
+</html> 
