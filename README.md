@@ -1,7 +1,7 @@
 # 🚀 Yuheng Zhao Portfolio
 
 ## 🌐 [Original Webflow Website (Click Here)](https://yuheng-zhao.webflow.io/)
-## 🟦 [Static Site (GitHub Pages Version)](https://sidiment.github.io/Yuheng-Portfolio/)
+## 🟦 [Static Site (GitHub Pages Version)]([https://sidiment.github.io/Yuheng-Portfolio/](https://sidiment.github.io/Portfolio/))
 
 ---
 
